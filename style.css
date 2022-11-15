@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/baloo-2-v16-latin-regular.eot'); 
+  src: local(''),
+       url('../fonts/baloo-2-v16-latin-regular.woff2') format('woff2'), 
+       url('../fonts/baloo-2-v16-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/baloo-2-v16-latin-600.eot'); 
+  src: local(''),
+       url('../fonts/baloo-2-v16-latin-600.woff2') format('woff2'), 
+       url('../fonts/baloo-2-v16-latin-600.woff') format('woff');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Baloo 2', sans-serif;
+}
+
+body {
+	background-color: #F2F8FD;
+}
+
+header {
+	max-width: 1600px;
+	margin: 0 auto;
+	margin-top: 25px; 
+}
+
+header .header__content {
+	display: flex;
+	align-items: center; 
+	justify-content: space-around;
+}
+
+header .search {
+	align-items: center; 
+}
+
+header input {
+	background-color: #E9F1FA;
+	width: 668px;
+	height: 53px;
+	border-radius: 26.5px;
+	outline: none; 
+	border: none; 
+	padding-left: 60px;
+	font-size: 15px;
+	padding-right: 10px;
+}
+
+header .search__img {
+	position: absolute;
+	margin-top: 14px;
+	margin-left: 20px;
+}
+
+header .setting {
+	background-color: #18333E;
+	padding: 16.93px; 
+	border-radius: 50%;
+}
+
+header .line {
+	background-color: #B4BCC4;
+	width: 1px;
+	height: 41px;
+}
+
+header .bell {
+	border: 1px solid #B4BCC4;
+	border-radius: 50%; 
+	padding: 16.88px;
+}
+
+main nav {
+	max-width: 1600px;
+	margin: 0 auto; 
+	margin-top: 91px; 
+}
+
+main nav a {
+	text-decoration: none;
+	line-height: 64px;
+	color: #18333E; 
+}
+
+main nav img {
+	margin-right: 16px; 
+}
+
+main .dashboard {
+	width: 123px;
+	height: 60px;
+	background: pink; 
+	border-top-right-radius: 31.5px;
+	border-bottom-right-radius: 31.5px;
+}
+
+main .home__img {
+	margin-left: 70px; 
+}
