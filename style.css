@@ -143,3 +143,18 @@ main .setting {
 	display: flex; 
 }
 
+section .title {
+	font-size: 30px; 
+	font-weight: 600;
+}
+
+section .nav__content {
+	display: flex; 
+}
+
+section .nav__content a {
+	max-width: 380px;
+	width: 100%; 
+	justify-content: space-around;
+	text-decoration: none;
+}
