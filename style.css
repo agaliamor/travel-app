@@ -33,12 +33,14 @@ header {
 	max-width: 1600px;
 	margin: 0 auto;
 	margin-top: 25px; 
+	margin-left: 77px; 
+	margin-right: 51px; 
 }
 
 header .header__content {
 	display: flex;
 	align-items: center; 
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 header .search {
@@ -81,6 +83,10 @@ header .bell {
 	padding: 16.88px;
 }
 
+header .location {
+	display: flex; 
+}
+
 main nav {
 	max-width: 1600px;
 	margin: 0 auto; 
@@ -95,16 +101,45 @@ main nav a {
 
 main nav img {
 	margin-right: 16px; 
+	margin-left: 77px; 
 }
 
 main .dashboard {
-	width: 123px;
-	height: 60px;
-	background: pink; 
 	border-top-right-radius: 31.5px;
 	border-bottom-right-radius: 31.5px;
+	display: flex; 
 }
 
-main .home__img {
-	margin-left: 70px; 
+main nav a:hover {
+	margin-left: 27px; 
+	transition: 0.5s; 
 }
+
+main .notes {
+	display: flex; 
+}
+
+main .theme {
+	display: flex; 
+}
+
+main .account {
+	display: flex; 
+}
+
+main .explore {
+	display: flex; 
+}
+
+main .graph {
+	display: flex;
+}
+
+main .messages {
+	display: flex; 
+}
+
+main .setting {
+	display: flex; 
+}
+
