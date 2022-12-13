@@ -9,31 +9,31 @@
 </head>
 <body>
 	
-	<header>
-		<div class="header__content">
-			<img src="./img/svg/logo.svg" alt="Logotype" class="logo">
-			<div class="search">
-				<img src="./img/svg/search.svg" alt="search" class="search__img">
-				<input type="text" placeholder="Search for places">
-			</div>
-			<img src="./img/svg/setting.svg" alt="Setting" class="setting">
-			<div class="line"></div>
-			<div class="location">
-				<img src="./img/svg/navigator.svg" alt="Navigator" class="navigator">
-				<p>New York/Dc</p>
-			</div>
-			<div class="notices">
-				<img src="./img/svg/notification-bing.svg" alt="Bell" class="bell">
-				<span class="notice"></span>
-			</div>
-			<img src="./img/png/avatar.png" alt="Avatar" class="avatar">
-		</div>
-	</header>
-
 	<div class="wrapper">
+		<header>
+			<div class="header__content">
+				<img src="./img/svg/logo.svg" alt="Logotype" class="logo">
+				<div class="search">
+					<img src="./img/svg/search.svg" alt="search" class="search__img">
+					<input type="text" placeholder="Search for places">
+				</div>
+				<img src="./img/svg/setting.svg" alt="Setting" class="setting">
+				<div class="line"></div>
+				<div class="location">
+					<img src="./img/svg/navigator.svg" alt="Navigator" class="navigator">
+					<p>New York/Dc</p>
+				</div>
+				<div class="notices">
+					<img src="./img/svg/notification-bing.svg" alt="Bell" class="bell">
+					<span class="notice"></span>
+				</div>
+				<img src="./img/png/avatar.png" alt="Avatar" class="avatar">
+			</div>
+		</header>
+		
 		<main>
 			<nav>
-				<div class="dashboard">
+				<div class="home">
 					<img src="./img/svg/links/home.svg" alt="" class="home__img">
 					<a href="#!">Dashboard</a>
 				</div>
@@ -67,7 +67,7 @@
 				</div>
 			</nav>
 	
-			<section>
+			<dashboard>
 				<div class="title">Discover World</div>
 				<div class="nav__content">
 					<a href="!#">Recommended</a>
@@ -77,41 +77,99 @@
 	
 				<div class="posters">
 					<div class="moon__night">
-						<img src="./" alt="Moonlight Night">
+						<img src="./img/png/moon_n.png" alt="Moonlight Night" class="mn__img">
 						<div class="poster__title">Moonlight Night</div>
 						<div class="disc__mn">
-							<img src="./" alt="geo">
+							<div class="country__geo"></div>
+							<img src="./img/svg/geo.svg" alt="geo">
 							<div class="country">Canada</div>
-							<img src="./" alt="Star">
+							<img src="./img/svg/star.svg" alt="Star">
 							<div class="evaluation">4.7</div>
 						</div>
 					</div>
-				</div>
-	
-				<!-- <div class="sahara__desert">
-					<img src="./" alt="Sahara Desert">
-					<div class="poster__title">Sahara Desert</div>
-					<div class="disc__sd">
-						<img src="./" alt="geo">
-						<div class="country">Africa</div>
-						<img src="./" alt="Star">
-						<div class="evaluation">4.9</div>
+					<div class="sahara__desert">
+						<img src="./img/png/sahara.png" alt="Sahara Desert" class="mn__img">
+						<div class="poster__title">Sahara Desert</div>
+						<div class="disc__mn">
+							<div class="country__geo"></div>
+							<img src="./img/svg/geo.svg" alt="geo">
+							<div class="country">Africa</div>
+							<img src="./img/svg/star.svg" alt="Star">
+							<div class="evaluation">4.9</div>
+						</div>
+					</div>
+					<div class="night__camping">
+						<img src="./img/png/night.png" alt="Night Camping" class="mn__img">
+						<div class="poster__title">Night Camping</div>
+						<div class="disc__mn">
+							<div class="country__geo"></div>
+							<img src="./img/svg/geo.svg" alt="geo">
+							<div class="country">New York</div>
+							<img src="./img/svg/star.svg" alt="Star">
+							<div class="evaluation">5.0</div>
+						</div>
 					</div>
 				</div>
-	
-				<div class="night__camping">
-					<img src="./" alt="Night Camping">
-					<div class="poster__title">Night Camping</div>
-					<div class="disc__nc">
-						<img src="./" alt="geo">
-						<div class="country">Africa</div>
-						<img src="./" alt="Star">
-						<div class="evaluation">4.9</div>
+
+				<div class="calendar">
+					<div class="clndr__header">
+						<div class="clndr__title">Event Dates</div>
+						<div class="month"><a href="!#">January15-2022</a></div>
 					</div>
-				</div> -->
+
+					<div class="clndr__body">
+						<div class="mo">
+							<div class="weekday">Mo</div>
+							<p>12</p>
+						</div>
+						<div class="tu">
+							<div class="weekday">Tu</div>
+							<p>13</p>
+						</div>
+						<div class="we">
+							<div class="weekday">We</div>
+							<p>14</p>
+						</div>
+						<div class="th">
+							<div class="weekday">Th</div>
+							<p>15</p>
+						</div>
+						<div class="fr">
+							<div class="weekday">Fr</div>
+							<p>16</p>
+						</div>
+						<div class="st">
+							<div class="weekday">St</div>
+							<p>17</p>
+						</div>
+						<div class="su">
+							<div class="weekday">Su</div>
+							<p>18</p>
+						</div>
+						<div class="mo">
+							<div class="weekday">Mo</div>
+							<p>19</p>
+						</div>
+						<div class="Tu">
+							<div class="weekday">Tu</div>
+							<p>20</p>
+						</div>
+					</div>
+				</div>
+
+
+			</dashboard>
 	
-			</section> 
+			<other-content>
+				<img src="./img/png/brazil_forest.png" alt="Slider" class="bf__img">
+				<div class="sdr__title">
+					<div class="place">Brazil Forest</div>
+					<img src="./img/svg/book-saved.svg" alt="save"> 
+				</div>
+				<div class="disc__sdr">I spend ten minutes or so doing a couple of Duolingo lessons in French so</div>
+			</other-content>
 		</main>
 	</div>
+
 </body>
 </html>
