@@ -195,6 +195,18 @@ section, aside {
 	margin-top: 58px; 
 }
 
+section .likes__mn {
+	width: 46px; 
+	height: 46px; 
+	background: #ffffff60;
+	padding: 15px 13px; 
+	border-radius: 50px; 
+	backdrop-filter: blur(25px);
+	position: absolute;
+	margin-top: 60px; 
+	margin-left: 170px; 
+}
+
 section .title {
 	font-size: 30px; 
 	font-weight: 600;
@@ -324,7 +336,7 @@ section .tu {
 	height: 111px; 
 	border-radius: 32px;
 	background-color: #18333E;
-	padding: 10px 22px;
+	padding: 10px 23px;
 	color: white; 
 	margin-top: -10px; 
 }
@@ -336,6 +348,16 @@ section .date {
 section .clndr__body p {
 	font-size: 25px; 
 	margin-bottom: 34px;  
+}
+
+section .circle {
+	width: 5px; 
+	height: 8px; 
+	border-radius: 13.5px; 
+	background-color: #F9D44A;
+	margin: 0 auto; 
+	margin-top: -15px; 
+	margin-bottom: 6px; 
 }
 
 section .tours {
@@ -356,6 +378,7 @@ section .p__rectangle {
 	border-radius: 13.5px;
 	background-color: #F9D44A;
 	padding: 13px 10px; 
+	cursor: pointer;
 }
 section .spooky_n {
 	margin-right: 45px;
