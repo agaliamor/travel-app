@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
 	<link rel="stylesheet" href="./style.css">
 	<title>TRAVEL-APP</title>
 </head>
+
 <body>
-	
+
 	<div class="wrapper">
 		<header>
 			<div class="header__content">
@@ -17,7 +19,7 @@
 					<img src="./img/svg/search.svg" alt="search" class="search__img">
 					<input type="text" placeholder="Search for places">
 				</div>
-				<img src="./img/svg/setting.svg" alt="Setting" class="setting">
+				<img src="./img/svg/filter.svg" alt="Filter" class="filter">
 				<div class="line"></div>
 				<div class="location">
 					<img src="./img/svg/navigator.svg" alt="Navigator" class="navigator">
@@ -30,82 +32,101 @@
 				<img src="./img/png/avatar.png" alt="Avatar" class="avatar">
 			</div>
 		</header>
-		
+
 		<main>
 			<nav>
-				<div class="home">
-					<img src="./img/svg/links/home.svg" alt="" class="home__img">
+				<div class="nav-link">
+					<div class="active-block active">
+						<img src="./img/svg/links/dashboard.svg" alt="Dashboard" class="home__img">
+					</div>
 					<a href="#!">Dashboard</a>
 				</div>
-				<div class="notes">
-					<img src="./img/svg/links/home.svg" alt="">
+				<div class="nav-link">
+					<div class="active-block">
+						<img src="./img/svg/links/notes.svg" alt="Note's">
+					</div>
 					<a href="#!">Note's</a>
 				</div>
-				<div class="theme">
-					<img src="./img/svg/links/home.svg" alt="">
+				<div class="nav-link">
+					<div class="active-block">
+						<img src="./img/svg/links/theme.svg" alt="THeme">
+					</div>
 					<a href="#!">Theme</a>
 				</div>
-				<div class="account">
-					<img src="./img/svg/links/home.svg" alt="">
+				<div class="nav-link">
+					<div class="active-block">
+						<img src="./img/svg/links/account.svg" alt="Account">
+					</div>
 					<a href="#!">Account</a>
 				</div>
-				<div class="explore">
-					<img src="./img/svg/links/home.svg" alt="">
+				<div class="nav-link">
+					<div class="active-block">
+						<img src="./img/svg/links/explore.svg" alt="Explore">
+					</div>
 					<a href="#!">Explore</a>
 				</div>
-				<div class="graph">
-					<img src="./img/svg/links/home.svg" alt="">
+				<div class="nav-link">
+					<div class="active-block">
+						<img src="./img/svg/links/graph.svg" alt="Graph">
+					</div>
 					<a href="#!">Graph</a>
 				</div>
-				<div class="messages">
-					<img src="./img/svg/links/home.svg" alt="">
+				<div class="nav-link">
+					<div class="active-block">
+						<img src="./img/svg/links/messages.svg" alt="Messages ">
+					</div>
 					<a href="#!">Messages</a>
 				</div>
-				<div class="setting">
-					<img src="./img/svg/links/home.svg" alt="">
+				<div class="nav-link">
+					<div class="active-block">
+						<img src="./img/svg/links/setting.svg" alt="Setting">
+					</div>
 					<a href="#!">Setting</a>
 				</div>
+				<div class="sign__out">
+					<img src="./img/svg/links/signout.svg" alt="Sign Out">
+					<a href="#!">Sign Out</a>
+				</div>
 			</nav>
-	
-			<dashboard>
+
+			<section>
 				<div class="title">Discover World</div>
 				<div class="nav__content">
 					<a href="!#">Recommended</a>
 					<a href="!#">Popular Places</a>
-					<a href="!#">Trip's</a>  
+					<a href="!#">Trip's</a>
 				</div>
-	
 				<div class="posters">
 					<div class="moon__night">
 						<img src="./img/png/moon_n.png" alt="Moonlight Night" class="mn__img">
 						<div class="poster__title">Moonlight Night</div>
 						<div class="disc__mn">
 							<div class="country__geo"></div>
-							<img src="./img/svg/geo.svg" alt="geo">
+							<img src="./img/svg/geo.svg" alt="Geo" class="geo">
 							<div class="country">Canada</div>
-							<img src="./img/svg/star.svg" alt="Star">
+							<img src="./img/svg/star.svg" alt="Star" class="star">
 							<div class="evaluation">4.7</div>
 						</div>
 					</div>
 					<div class="sahara__desert">
-						<img src="./img/png/sahara.png" alt="Sahara Desert" class="mn__img">
+						<img src="./img/png/sahara.png" alt="Sahara Desert" class="sd__img">
 						<div class="poster__title">Sahara Desert</div>
 						<div class="disc__mn">
 							<div class="country__geo"></div>
-							<img src="./img/svg/geo.svg" alt="geo">
+							<img src="./img/svg/geo.svg" alt="geo" class="geo">
 							<div class="country">Africa</div>
-							<img src="./img/svg/star.svg" alt="Star">
+							<img src="./img/svg/star.svg" alt="Star" class="star">
 							<div class="evaluation">4.9</div>
 						</div>
 					</div>
 					<div class="night__camping">
-						<img src="./img/png/night.png" alt="Night Camping" class="mn__img">
+						<img src="./img/png/night.png" alt="Night Camping" class="nc__img">
 						<div class="poster__title">Night Camping</div>
 						<div class="disc__mn">
 							<div class="country__geo"></div>
-							<img src="./img/svg/geo.svg" alt="geo">
+							<img src="./img/svg/geo.svg" alt="geo" class="geo">
 							<div class="country">New York</div>
-							<img src="./img/svg/star.svg" alt="Star">
+							<img src="./img/svg/star.svg" alt="Star" class="star">
 							<div class="evaluation">5.0</div>
 						</div>
 					</div>
@@ -116,7 +137,6 @@
 						<div class="clndr__title">Event Dates</div>
 						<div class="month"><a href="!#">January15-2022</a></div>
 					</div>
-
 					<div class="clndr__body">
 						<div class="mo">
 							<div class="weekday">Mo</div>
@@ -124,7 +144,8 @@
 						</div>
 						<div class="tu">
 							<div class="weekday">Tu</div>
-							<p>13</p>
+							<!-- <div class="circle"></div> -->
+							<p class="date">13</p>
 						</div>
 						<div class="we">
 							<div class="weekday">We</div>
@@ -157,19 +178,95 @@
 					</div>
 				</div>
 
+				<div class="tours">
+					<div class="arctive__tour">
+						<img src="./img/png/nether.png" alt="Netherlands">
+						<div class="tours__main">
+							<div class="title__tour">Netherlands Travel Tour</div>
+							<div class="eva__tour">
+								<img src="./img/svg/star.svg" alt="Star">
+								<div class="eva">4.7</div>
+							</div>
+						</div>
+						<div class="p__rectangle">
+							<img src="./img/svg/pause.svg" alt="Pause" class="pause">
+						</div>
+					</div>
+					<div class="other__tours">
+						<img src="./img/png/spooky.png" alt="Spooky Night" class="spooky_n">
+						<img src="./img/png/mountains.png" alt="Mountains" class="mountains">
+					</div>
+				</div>
+			</section>
 
-			</dashboard>
-	
-			<other-content>
-				<img src="./img/png/brazil_forest.png" alt="Slider" class="bf__img">
+			<aside>
+				<div class="slider">
+					<img src="./img/png/brazil_forest.png" alt="Slider" class="bf__img">
+					<div class="rectangle">
+						<div class="pictures">
+							<img src="./img/png/pic1.png" class="pic1">
+							<img src="./img/png/pic2.png" class="pic2">
+							<img src="./img/png/pic3.png" class="pic3">
+							<img src="./img/png/pic4.png" class="pic4">
+						</div>
+					</div>
+				</div>
 				<div class="sdr__title">
 					<div class="place">Brazil Forest</div>
-					<img src="./img/svg/book-saved.svg" alt="save"> 
+					<img src="./img/svg/book-saved.svg" alt="save">
 				</div>
 				<div class="disc__sdr">I spend ten minutes or so doing a couple of Duolingo lessons in French so</div>
-			</other-content>
+
+				<div class="tickets">
+					<div class="price">
+						<div class="people">per/person</div>
+						<div class="dollars">$1540</div>
+					</div>
+					<a href="!#"><div class="btn__travel">Book Travel</div></a>
+				</div>
+
+				<div class="places">
+					<div class="nature__lake">
+						<img src="./img/png/nature.png" alt="Nature Lake" class="nl">
+						<div class="main__place">
+						</div>
+						<div class="place__tick">
+							<div class="tick__title">Nature Lake</div>
+							<div class="country__tick">
+								<img src="./img/svg/geo.svg" alt="Geo">
+								<div class="country__title">Afganistan</div>
+							</div>
+						</div>
+						<img src="./img/svg/heart.svg" alt="like" class="like">
+					</div>
+					<div class="camel__ride">
+						<img src="./img/png/camel.png" alt="Camel Ride" class="cr">
+						<div class="place__tick">
+							<div class="tick__title">Camel Ride</div>
+							<div class="country__tick">
+								<img src="./img/svg/geo.svg" alt="Geo">
+								<div class="country_tick">Srilanka</div>
+							</div>
+						</div>
+						<img src="./img/svg/heart.svg" alt="like" class="like">
+					</div>
+					<div class="mid__forest">
+						<img src="./img/png/mid.png" alt="Mid Forest" class="mf">
+						<div class="place__tick">
+							<div class="tick__title">Mid Forest</div>
+							<div class="country__tick">
+								<img src="./img/svg/geo.svg" alt="Geo">
+								<div class="country_tick">Brazil</div>
+							</div>
+						</div>
+						<img src="./img/svg/heart.svg" alt="like" class="like">
+					</div>
+				</div>
+
+			</aside>
 		</main>
 	</div>
 
 </body>
+
 </html>

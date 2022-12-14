@@ -32,6 +32,7 @@ a {
 
 body {
 	background-color: #F2F8FD;
+	color: #18333E;
 }
 
 body .wrapper {
@@ -44,6 +45,7 @@ header {
 	margin-top: 25px; 
 }
 
+
 header .header__content {
 	align-items: center; 
 	display: flex;
@@ -52,6 +54,7 @@ header .header__content {
 
 header .search {
 	align-items: center; 
+	margin-left: 90px; 
 }
 
 
@@ -73,7 +76,7 @@ header .search__img {
 	margin-left: 20px;
 }
 
-header .setting {
+header .filter {
 	background-color: #18333E;
 	padding: 16.93px; 
 	border-radius: 50%;
@@ -95,6 +98,10 @@ header .location {
 	display: flex; 
 }
 
+header .location p {
+	font-weight: 600;
+}
+
 header .navigator {
 	margin-right: 17.13px;
 }
@@ -107,7 +114,6 @@ main nav {
 	max-width: 160px;
 	width: 100%;
 	margin-top: 91px;
-
 }
 
 main nav a {
@@ -120,44 +126,56 @@ main nav img {
 	margin-right: 16px; 
 }
 
-main .home {
-	border-top-right-radius: 31.5px;
-	border-bottom-right-radius: 31.5px;
+main .dashboard {
 	display: flex; 
 }
 
-main nav a:hover {
+main .dashboard::after {
+	content: '';
+	display: flex; 
+	background-color: #F9D44A;
+	border-top-right-radius: 31.5px;
+	border-bottom-right-radius: 31.5px;
+	opacity: 0; 
+	transition: 0.5s ease; 
+}
+
+
+main .nav-link:hover a {
 	margin-left: 27px; 
 	transition: 0.5s; 
 }
 
-main .notes {
+main .nav-link {
 	display: flex; 
+	cursor: pointer;
 }
 
-main .theme {
-	display: flex; 
-}
-
-main .account {
-	display: flex; 
-}
-
-main .explore {
-	display: flex; 
-}
-
-main .graph {
+main .nav-link .active-block {
 	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	border-radius: 0px 31.5px 31.5px 0px;
+	width: 123px;
+	margin-left: -84px;
+	transition: 0.2s;
 }
 
-main .messages {
-	display: flex; 
+main .nav-link:hover .active-block {
+	background: #f9d34a7a;
 }
 
-main .setting {
-	display: flex; 
+main .nav-link:hover .active {
+	background: #F9D44A;
+}
 
+main .nav-link .active {
+	background: #F9D44A;
+}
+
+main .sign__out {
+	display: flex; 
+	margin-top: 290px; 
 }
 
 main {
@@ -165,83 +183,130 @@ main {
 	justify-content: space-between;
 }
 
-dashboard {
-	display: block;
-}
-
-dashboard other-content {
+section, aside {
 	margin-top: 58px; 
 }
 
-dashboard .title {
+section {
+	display: block;
+}
+
+section, aside {
+	margin-top: 58px; 
+}
+
+section .title {
 	font-size: 30px; 
 	font-weight: 600;
 	color: #18333E; 
 }
 
-dashboard .nav__content {
+section .nav__content {
 	display: flex; 
 	max-width: 380px;
 	width: 100%; 
 	justify-content: space-between;
 }
 
-dashboard .nav__content a {
+section .nav__content a {
 	text-decoration: none;
 	color: gray;
 }
 
-dashboard .nav__content a:hover {
+section .nav__content a:hover {
 	color: #18333E;; 
 	transition: 0.5s;
 }
 
-dashboard .posters {
+section .posters {
 	display: flex; 
 	max-width: 783px;
 	width: 100%; 
 	justify-content: space-between;
+	
 }
 
-dashboard .mn__img {
+section .mn__img {
 	border-radius: 30px; 
 	margin-bottom: 21px; 
 	margin-top: 37px;
 	margin-right: 30px;
 }
 
-dashboard .disc__mn {
+section .mn__img:hover {
+	box-shadow: 0px 0px 50px 0px rgba(31, 188, 196, 0.5);
+	transition: 0.3s; 
+	transform: scale(1.1);
+}
+
+section .sd__img {
+	border-radius: 30px; 
+	margin-bottom: 21px; 
+	margin-top: 37px;
+	margin-right: 30px;
+}
+
+section .sd__img:hover {
+	box-shadow: 0px 0px 50px 0px rgba(221, 35, 3, 0.5);
+	transition: 0.3s; 
+	transform: scale(1.1);
+}
+
+section .nc__img {
+	border-radius: 30px; 
+	margin-bottom: 21px; 
+	margin-top: 37px;
+	margin-right: 30px;
+}
+
+section .nc__img:hover {
+	box-shadow: 0px 0px 50px 0px rgb(33, 65, 111, 0.5);
+	transition: 0.3s; 
+	transform: scale(1.1);
+}
+
+section .disc__mn {
 	display: flex;
 	max-width: 241px; 
 	width: 100%; 
 }
 
-dashboard .poster__title {
+section .poster__title {
 	font-size: 22px; 
 }
 
-dashboard .calendar {
+section .geo {
+	margin-right: 12.48px;
+}
+
+section .star {
+	margin-right: 12px;
+	margin-left: 20px;
+}
+
+section .calendar {
 	max-width: 783px;
 	width: 100%; 
 	margin-top: 59px; 
 }
 
-dashboard .clndr__body {
+section .clndr__body {
 	display: flex; 
 	justify-content: space-between;
 }
 
-dashboard .clndr__header {
+section .clndr__header {
 	display: flex; 
 	justify-content: space-between;
 	color: #18333E; 
 }
-dashboard .clndr__title {
+
+section .clndr__title {
 	font-size: 30px; 
 	font-weight: 600;
 }
 
-dashboard .month {
+section .month {
 	font-weight: 500;
 	border: 1px solid #B4BCC4; 
 	border-radius: 30px; 
@@ -250,30 +315,272 @@ dashboard .month {
 	margin-bottom: 61px; 
 }
 
-dashboard .mo {
-
+section .weekday {
+	margin-bottom: 29px; 
 }
 
-other-content .bf__img {
+section .tu {
+	width: 64px; 
+	height: 111px; 
+	border-radius: 32px;
+	background-color: #18333E;
+	padding: 10px 22px;
+	color: white; 
+	margin-top: -10px; 
+}
+
+section .date {
+	color: white; 
+}
+
+section .clndr__body p {
+	font-size: 25px; 
+	margin-bottom: 34px;  
+}
+
+section .tours {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 43px; 
+}
+
+section .pause {
+	width: 7px;
+	height: 13px;
+}
+
+section .p__rectangle {
+	width:27px;
+	height: 49px;
+	margin-top: 13px; 
+	border-radius: 13.5px;
+	background-color: #F9D44A;
+	padding: 13px 10px; 
+}
+section .spooky_n {
+	margin-right: 45px;
+}
+
+section .spooky_n:hover {
+	box-shadow: 0px 0px 50px 0px rgba(113, 79, 108, 0.5);
+	transition: 0.3s; 
+}
+
+section .mountains:hover {
+	box-shadow: 0px 0px 50px 0px rgba(111, 158, 169, 0.5);
+	transition: 0.3s; 
+}
+section .other__tours img {
+	border-radius: 25px; 
+}
+
+section .arctive__tour {
+	width: 457px;
+	height: 119px;
+	background: #18333E; 
+	border-radius: 25px; 
+	display: flex; 
+	justify-content: space-between;
+	padding: 23px 23px; 
+}
+
+section .arctive__tour img {
+	border-radius: 12px;
+}
+
+section .tours__main {
+	display: block;
+}
+
+section .eva__tour {
+	display: flex; 
+}
+
+section .title__tour {
+	color: white; 
+	font-size: 18px; 
+	font-weight: 500;
+	margin-top: 8px; 
+}
+
+section .eva {
+	color: white; 
+	margin-left: 6px; 
+	font-size: 14px; 
+}
+
+aside .bf__img {
 	border-radius: 30px; 
 }
 
-other-content .place {
+aside .bf__img:hover {
+	box-shadow: 0px 0px 50px 0px rgba(25, 209, 99, 0.5);
+	transition: 0.3s; 
+}
+
+aside .place {
 	font-size: 30px; 
 	font-weight: 600;
 	color: #18333E; 
 }
 
-other-content .sdr__title {
+aside .sdr__title {
 	display: flex; 
 	max-width: 395px; 
 	width: 100%;  
 	justify-content: space-between;
-	margin-top: 31px; 
+	margin-top: 70px; 
 }
 
-other-content .disc__sdr {
+aside .disc__sdr {
 	max-width: 395px;
 	width: 100%;
 	color:	#18333E; 
+}
+
+aside .tickets {
+	margin-top: 56px; 
+	display: flex;
+	justify-content: space-between;
+}
+
+aside .price {
+	display: block; 
+}
+
+aside .dollars {
+	font-size: 40px; 
+	font-weight: 600;
+}
+
+aside .btn__travel {
+	color: white; 
+	font-size: 18px; 
+	font-weight: 700;
+	background: #18333E;
+	width: 175px;
+	height: 61px; 
+	padding: 19px 40px; 
+	border-radius: 30.5px;
+	margin-top: 3px; 
+}
+
+aside .places {
+	display: block; 
+	max-width: 395px;
+	width: 100%; 
+	margin-top: 55px;
+}
+
+aside .nature__lake {
+	display: flex;  
+	margin-bottom: 17px;
+}
+
+aside .camel__ride {
+	display: flex; 
+	margin-bottom: 17px; 
+}
+
+aside .mid__forest {
+	display: flex; 
+}
+
+aside .nl {
+	border-radius: 20px; 
+	margin-right: 18px;
+}
+
+aside .nl:hover {
+	box-shadow: 0px 0px 50px 0px rgba(6, 180, 254, 0.5);
+	transition: 0.3s; 
+}
+
+aside .cr {
+	border-radius: 20px; 
+	margin-right: 18px;
+}
+
+aside .cr:hover {
+	box-shadow: 0px 0px 50px 0px rgba(199, 99, 30, 0.5);
+	transition: 0.3s; 
+}
+
+aside .mf {
+	border-radius: 20px; 
+	margin-right: 18px;
+} 
+
+aside .mf:hover {
+	box-shadow: 0px 0px 50px 0px rgba(59, 90, 129, 0.5);
+	transition: 0.3s; 
+}
+
+aside .place__tick {
+	display: block; 
+}
+
+aside .country__tick {
+	display: flex; 
+}
+
+aside .rectangle {
+	backdrop-filter: blur(2.5px);
+	display: flex;
+	max-width: 326px;
+	width: 100%; 
+	height: 71px;
+	background-color: #ffffff32;
+	border-radius: 15px;
+	position: relative; 
+	margin-top: -110px;
+	margin-left: 35px;
+}
+
+aside .pictures {
+	margin-top: 12px;
+	max-width: 326px;
+	width: 100%; 
+	margin-left: 20px; 
+}
+
+aside .pic1 {
+	transition: all .1s ease;
+}
+
+aside .pic2 {
+	margin-left: 6px; 
+	margin-right: 6px;
+}
+
+aside .pic3 {
+	margin-right: 6px;
+}
+
+aside .pic1:hover {
+	width: 64px; 
+	height: 47px; 
+	transform: scale(1.2);
+	transition: 0.5s; 
+}
+
+aside .pic2:hover {
+	width: 64px; 
+	height: 47px; 
+	transform: scale(1.2);
+	transition: 0.5s; 
+}
+
+aside .pic3:hover {
+	width: 64px; 
+	height: 47px; 
+	transform: scale(1.2);
+	transition: 0.5s; 
+}
+
+aside .pic4:hover {
+	width: 64px; 
+	height: 47px; 
+	transform: scale(1.2);
+	transition: 0.5s; 
 }
