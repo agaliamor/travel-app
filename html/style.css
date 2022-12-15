@@ -1,0 +1,19 @@
+body {
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box;
+}
+
+body p {
+  font-size: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin-top: 40px; 
+}
+
+body .cat {
+  display: block; 
+  text-align: center;
+  transform: scale(0.4);
+  margin-top: -230px;
+}
